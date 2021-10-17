@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../Ex1/assets/js/jquery.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Đề bài: khi click button thì phần tử li cuối cùng sẽ di chuyển ra đầu danh sách. -->
+    <script>
+        $(document).ready(function(){
+            $("#move").click(function(){
+                var insert = $("li").last();
+                $("#list").prepend(insert);
+                
+            });
+        });
+    </script>
+
+    <h1>Di chuyển tag</h1>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+    </ul>
+
+    <button type="button" id="move">Di chuyển</button>
+</body>
+
+</html>

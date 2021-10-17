@@ -1,0 +1,61 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: #0073aa;
+    flex-basis: 100%;
+}
+
+header h2{
+    text-transform: uppercase;
+    color: #f8f8f8;
+    font-size: 20px;
+    margin: 0;
+    padding: 15px 0;
+    line-height: 30px;
+    /* 30 + 30 */
+    font-weight: bold;
+}
+
+#wp-content{
+    min-height: 670px;
+    flex-basis: 100%;
+    display: flex;
+    /* clear: both */
+}
+
+#content{
+    flex-basis: 660px;
+    background-color: #f4f4f4;
+    /* float: left */
+}
+
+#sidebar{
+    flex-basis: 300px;
+    background-color: #e1e1e1;
+    /* float: left - right */
+}
+
+footer{
+    background-color: #232323;
+    flex-basis: 100%;
+}
+
+footer p{
+    color: #f8f8f8;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+}
+

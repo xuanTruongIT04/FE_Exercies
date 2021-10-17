@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Học web chuẩn</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+  .box {
+    border: 3px solid #eee;
+    display: none;
+    height: 100px;
+    margin-top: 5px;
+    padding: 10px;
+    width: 150px;
+  }
+
+  .show {
+      display: block;
+  }
+</style>
+<script>
+  $(function(){
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".box").slideToggle(250);
+            });
+        });
+
+  });
+</script>
+</head>
+
+<body>
+   <!-- Đề bài: Click ẩn hiện tag liên tục -->
+<button type="button" id="toggle">Open</button>
+<div class="box">In suscipit nec velit sit amet convallis. Integer</div>
+</body>
+</html>

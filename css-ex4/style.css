@@ -1,0 +1,41 @@
+*{
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.sub-header{
+    font-weight: bold;
+}
+
+h2:nth-child(6){
+    text-transform: uppercase;
+}
+
+.s1{
+    font-weight: bold;
+}
+
+.s2{
+    text-decoration: line-through;
+}
+
+p:nth-child(7){
+    text-align: justify;
+}
+
+p:last-child{
+    color: orange;
+    text-align: right;
+}
+

@@ -1,0 +1,40 @@
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 15px;
+}
+
+#wp-content{
+    min-height: 600px;
+    display: flex;
+}
+
+#content{
+    background-color: aqua;
+    min-height: 600px;
+    flex-basis: 600px;
+}
+
+#content, #sidebar{
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    background-color: orange;
+    min-height: 600px;  
+    flex-basis: 360px;
+}
+
+footer{
+    padding: 10px;
+}
+
+header, footer{
+    background-color: deepskyblue;
+    text-align: center;
+    color: #fff;
+}

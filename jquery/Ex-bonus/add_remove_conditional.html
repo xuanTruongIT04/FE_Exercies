@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../Ex1/assets/js/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Đề bài: viết thêm code sao cho chặn không cho xóa phần tử đầu tiên     -->
+    <script>
+        $(document).ready(function(){
+            $("button#add").click(function(){
+                $("ul").append("<li>Item 8</li>");
+            })
+
+            $("button#remove").click(function(){
+                $("li:gt(0)").last().remove();
+            })
+        })
+    </script>
+
+    <h1>Xoá phần tử có điều kiện</h1>
+    <ul id="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+    </ul> <BR> <BR>
+
+    <button type="button" id="add">Add tag</button>
+    <button type="button" id="remove">Remove tag</button>
+
+</body>
+</html>

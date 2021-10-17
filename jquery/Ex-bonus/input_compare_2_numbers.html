@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/Ex1/assets/js/jquery.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Đề bài: nhập 2 số từ input, xuất ra số lớn hơn. -->
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var a = $("#valueA").val();
+                var b = $("#valueB").val();
+                var result = $("#result");
+
+                if(a>b) $(result).text(a);
+                else $(result).text(b);
+            })
+        });
+    </script>
+
+    <h1>Nhập và so sánh 2 số</h1>
+    <input type="text" id="valueA" value = "0"> <BR>
+    <input type="text" id="valueB" value = "0"> <BR>
+    <button>SO SÁNH</button>
+    <div>
+        Max: <span id="result"></span>
+    </div>
+
+</body>
+
+</html>

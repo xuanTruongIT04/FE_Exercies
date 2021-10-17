@@ -1,0 +1,80 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+    transition: all .3s linear;
+}
+
+h1 {
+    font-size: 33px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.show {
+    display: inline-block;
+    position: relative;
+
+}
+
+.show img {
+    width: 350px;
+    height: 350px;
+}
+
+.list-thumb {
+    display: flex;
+    margin-top: 30px;
+}
+
+.list-thumb li {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.list-thumb li:last-of-type{
+    margin-right: 0;
+}
+
+.list-thumb li a {
+    display: block;
+}
+
+.list-thumb li img {
+    width: 80px;
+    height: 80px;
+}
+
+.active {
+    border: 2px solid #000;
+    transform: scale(1.05);
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 37%;
+    background-color: orange;
+    color: rgb(71, 47, 47);
+    cursor: pointer;
+    border: 1px solid #333;
+}
+
+button.prev {
+    left: -100px;
+}
+
+button.next {
+    right: -100px;
+}
+
+button i {
+    font-size: 50px;
+    text-align: center;
+}

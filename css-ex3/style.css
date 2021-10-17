@@ -1,0 +1,33 @@
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1#header{
+    background-color: #A9C2C1;
+}
+
+h1#header:hover{
+    background-color: rgb(95, 189, 95);
+}
+
+h2{
+    color: orange;
+}
+
+.text-desc{
+    font-weight: bold;
+    color: rgb(82, 177, 82);
+}
+
+.text-desc:hover{
+    color: rgb(197, 0, 0);;
+}
+
+.color-gy{
+    color: greenyellow;
+}
+
+input:checked+label{
+    color: #f00;
+}
