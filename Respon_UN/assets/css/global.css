@@ -1,0 +1,14 @@
+.flex{
+    display: flex; 
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+.pb-15{
+    padding-bottom: 15px;
+}
+
+.pl-0{
+    padding-left: 0;
+}
